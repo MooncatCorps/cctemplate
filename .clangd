@@ -1,0 +1,9 @@
+CompileFlags:
+    Add: [
+        "-I/files/projects/cctemplate/src",
+        "-Wall",
+        "-Wshadow",
+        "-Wextra",
+        "-std=c++20"
+    ]
+
