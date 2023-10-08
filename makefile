@@ -22,6 +22,8 @@ CCSTANDARD = c++20
 CCFLAGS = -std=$(CC_STANDARD) -I$(SOURCE_DIR)
 LDFLAGS =
 
+.PHONY: all clean
+
 all : $(OUT_DIR) $(OUT_FILE)
 
 $(OUT_FILE) : $(OBJECT_FILES)
@@ -33,4 +35,7 @@ $(BUILD_DIR)/%.$(OBJECT_FILE_EXTENSION) : %.$(SOURCE_FILE_EXTENSION)
 
 $(OUT_DIR) : $(BUILD_DIR)
 	mkdir -p $(OUT_DIR)
+
+clean :
+	rm -r $(BUILD_DIR)/*
 
