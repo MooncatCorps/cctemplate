@@ -22,7 +22,7 @@
 # Fortran module files
 *.mod
 *.smod
-Irelative
+
 # Compiled Static libraries
 *.lai
 *.la
