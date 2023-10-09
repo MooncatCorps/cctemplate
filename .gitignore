@@ -47,6 +47,9 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-# metadata
+# Metadata
 compile_commands.json
+
+# Clang
+.cache
 
