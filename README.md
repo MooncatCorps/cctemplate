@@ -2,14 +2,43 @@
 
 CCTemplate is a template that functions as a base for C++ based projects.
 
-It is currently somewhat simple and holds lacking support for cross-platform
-adaptability and perhaps external tool integration. However, in it's current
-state it provides a solid quickstart for any general purpose C++ project.
+It provides a solid base for C++ based projects which conform to the
+following structure (Mooncat Standard):
 
-It is currently based on LLVM's Clang, however and as always, slight tweaks
-can be made to the provided makefile to have it work with any other compiler.
+```
+Project
+├── CMakeLists.txt
+├── README.md   
+└── src                         <- Base Dir
+    ├── main.cc                 <- Main Source File
+    ├── project                 <- General Project Properties
+    │   ├── project.hh
+    │   └── project.hh.in
+    └── project_name            <- Sub-Directory Named After the Project
+        ├── headers.hh
+        ├── sources.cc
+        └── subidrs             <- Organization
+            ├── headers.hh
+            └── sources.cc
+```
 
-## To-dos:
-- Integrate CMake
-- Integrate practical dependency addition
+## Tooling
+
+It is based on CMake and provides the necessary files to integrate popular
+development tools (Current focus is LLVM's Clang)
+
+### LSP, Linters and Formatters
+- clangd (Handled by compile_commands.json upon running `cmake .`)
+- clang-format
+- clang-tidy (Soon)
+- ccls (Soon)
+- cquery (Soon)
+
+### Testing
+- catch
+- google mock
+- boost.test
+
+### Common Library Integration (Optional, but provides quick ways to add them)
+- boost
 
