@@ -24,21 +24,6 @@ Project
 
 ## Tooling
 
-It is based on CMake and provides the necessary files to integrate popular
-development tools (Current focus is LLVM's Clang)
-
-### LSP, Linters and Formatters
-- clangd (Handled by compile_commands.json upon running `cmake .`)
-- clang-format
-- clang-tidy (Soon)
-- ccls (Soon)
-- cquery (Soon)
-
-### Testing
-- catch
-- google mock
-- boost.test
-
-### Common Library Integration (Optional, but provides quick ways to add them)
-- boost
+Tooling such as diagnostics, linters, formatters etc can be found in other
+Mooncat Corps repositories such as clang-base, etc.
 
