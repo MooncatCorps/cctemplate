@@ -1,6 +1,7 @@
 # CC Template
 
-CCTemplate is a template that functions as a base for C++ based projects.
+CCTemplate is a template that functions as a base for MooncatCorps
+C++ based projects.
 
 It provides a solid base for C++ based projects which conform to the
 following structure (Mooncat Standard):
@@ -24,6 +25,7 @@ Project
 
 ## Tooling
 
-Tooling such as diagnostics, linters, formatters etc can be found in other
-Mooncat Corps repositories such as clang-base, etc.
+Items such as lsp configurations, linters, formatters etc can be found in the
+[Mooncat Standard Tools](https://github.com/MooncatCorps/mooncat-standard-tools)
+repository.
 
